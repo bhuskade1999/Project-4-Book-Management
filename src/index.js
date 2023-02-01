@@ -5,6 +5,8 @@ mongoose.set("strictQuery",true)
 const app=express()
 
 app.use(express.json())
+app.use(cors())
+
 
 mongoose.connect("mongodb+srv://nishant55:1234@nishant99.et97kst.mongodb.net/group10Databases", {
     useNewUrlParser: true
